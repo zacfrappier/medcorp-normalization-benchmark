@@ -13,6 +13,42 @@ from pathlib import Path
 
 MISSING = {"", "null", "none", "n/a", "na", "-", "unknown"}
 
+def test_composite_key(
+    rows: list[dict[str, str]],
+    columns: tuple[str, ...],
+) -> None:
+    """Test whether a group of columns uniquely identifies each row."""
+
+    combinations = [
+        tuple(row[column] for column in columns)
+        for row in rows
+    ]
+
+    counts = Counter(combinations)
+    duplicate_groups = [
+        key for key, count in counts.items()
+        if count > 1
+    ]
+
+    print("\nCOMPOSITE KEY TEST")
+    print("-" * 60)
+    print(f"Columns tested: {', '.join(columns)}")
+    print(f"Total rows: {len(rows):,}")
+    print(f"Unique combinations: {len(counts):,}")
+    print(f"Duplicate combinations: {len(duplicate_groups):,}")
+
+    if not duplicate_groups:
+        print("RESULT: This combination is unique in the dataset.")
+    else:
+        largest_duplicate = max(
+            counts[key] for key in duplicate_groups
+        )
+        print(
+            "RESULT: This combination is NOT unique."
+        )
+        print(
+            f"Largest duplicate group: {largest_duplicate} rows"
+        )
 
 def normalize(value: str) -> str:
     return value.strip().lower()
@@ -307,6 +343,25 @@ def print_report(
         if candidates
         else "None detected"
     )
+
+    appointment_key = (
+    "Patient_ID",
+    "Appointment_Date",
+    "Doctor_ID",
+    "Ward_ID",
+)
+
+    test_composite_key(rows, appointment_key)
+
+    appointment_treatment_key = (
+    "Patient_ID",
+    "Appointment_Date",
+    "Doctor_ID",
+    "Ward_ID",
+    "Treatment_Code",
+)
+
+    test_composite_key(rows, appointment_treatment_key)
 
     print("\nLIKELY FUNCTIONAL DEPENDENCIES")
     print(
