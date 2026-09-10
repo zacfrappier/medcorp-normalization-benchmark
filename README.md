@@ -61,7 +61,8 @@ This section is intentionally reserved for the database-analysis scripts that wi
 ### How to Run
 
 <!-- Add commands here once the analysis scripts are implemented. -->
-
+from src\analysis
+python .\inspect_legacy_schema.py ..\..\data\original\medcorp_legacy_dump.pdf
 ### Script Overview
 
 <!-- Add each script name, purpose, inputs, and outputs here. -->
