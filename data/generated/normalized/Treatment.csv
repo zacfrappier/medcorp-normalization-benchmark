@@ -1,0 +1,51 @@
+Treatment_Code,Treatment_Description,Treatment_Cost
+T-025,Biopsy (Level 1),3896.89
+T-014,Ultrasound (Level 1),3055.43
+T-023,X-Ray (Level 3),2348.85
+T-002,Vaccination (Level 1),3631.58
+T-013,Biopsy (Level 2),4068.72
+T-045,Dialysis (Level 3),1194.73
+T-036,ECG (Level 3),217.20
+T-016,Biopsy (Level 3),2792.82
+T-033,Chemotherapy (Level 1),4066.13
+T-042,Biopsy (Level 2),2596.20
+T-039,Vaccination (Level 3),4169.10
+T-015,Blood Panel (Level 2),1882.60
+T-030,Ultrasound (Level 3),3747.06
+T-005,Vaccination (Level 1),1753.09
+T-021,Dialysis (Level 1),2626.17
+T-008,X-Ray (Level 1),624.36
+T-046,X-Ray (Level 1),1247.42
+T-043,X-Ray (Level 1),3051.26
+T-022,Ultrasound (Level 1),2234.82
+T-010,Biopsy (Level 1),2906.56
+T-048,ECG (Level 3),515.77
+T-017,Physical Therapy (Level 1),3546.22
+T-031,Biopsy (Level 3),152.86
+T-047,X-Ray (Level 1),2280.69
+T-050,MRI Scan (Level 3),593.71
+T-012,MRI Scan (Level 3),3757.60
+T-037,ECG (Level 3),2675.93
+T-004,Biopsy (Level 3),4161.93
+T-032,Biopsy (Level 2),322.41
+T-038,Physical Therapy (Level 1),3405.18
+T-006,Biopsy (Level 2),2816.72
+T-011,Blood Panel (Level 3),2016.83
+T-028,Ultrasound (Level 3),1253.34
+T-007,Vaccination (Level 2),3099.61
+T-027,Blood Panel (Level 3),2632.90
+T-003,Biopsy (Level 3),1966.66
+T-001,ECG (Level 1),2847.42
+T-018,ECG (Level 2),950.70
+T-026,Biopsy (Level 2),2547.34
+T-044,Vaccination (Level 2),2433.04
+T-020,MRI Scan (Level 1),2699.11
+T-034,Blood Panel (Level 1),2076.54
+T-019,Dialysis (Level 1),321.99
+T-035,ECG (Level 3),3094.51
+T-024,Ultrasound (Level 2),3875.79
+T-029,MRI Scan (Level 2),3183.62
+T-009,ECG (Level 3),2965.52
+T-041,ECG (Level 2),2524.50
+T-049,Chemotherapy (Level 2),1153.08
+T-040,X-Ray (Level 3),4365.01

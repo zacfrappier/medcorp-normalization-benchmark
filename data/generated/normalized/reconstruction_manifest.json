@@ -1,0 +1,18 @@
+{
+  "description": "Normalized MedCorp data reconstructed from the ordered legacy dump.",
+  "counts": {
+    "Patient": 19893,
+    "Doctor": 50,
+    "Ward": 10,
+    "Treatment": 50,
+    "Appointment": 99999,
+    "AppointmentTreatment": 100000
+  },
+  "appointment_natural_key": [
+    "Patient_ID",
+    "Appointment_Date",
+    "Doctor_ID",
+    "Ward_ID"
+  ],
+  "generated_key": "Appointment_ID"
+}
