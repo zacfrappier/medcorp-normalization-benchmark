@@ -1,0 +1,25 @@
+{
+  "dataset": {
+    "flat_rows": 100000,
+    "patients_read": 1000,
+    "repetitions": 30,
+    "doctor_id": "D004"
+  },
+  "memory_mb": {
+    "flat": 113.05625343322754,
+    "normalized": 93.08843898773193
+  },
+  "mutation_ms": {
+    "flat_median_ms": 3.8074500000000002,
+    "flat_mean_ms": 4.512976666666667,
+    "normalized_median_ms": 0.0001,
+    "normalized_mean_ms": 0.00025333333333333333
+  },
+  "read_latency_ms": {
+    "patient_count": 1000,
+    "flat_median_ms": 4.02395,
+    "flat_mean_ms": 4.22832,
+    "normalized_median_ms": 2.2641999999999998,
+    "normalized_mean_ms": 2.7491433333333335
+  }
+}
